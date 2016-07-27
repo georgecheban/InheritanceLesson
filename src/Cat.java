@@ -1,6 +1,4 @@
-/**
- * Created by georgec on 27.07.16.
- */
+
 public class Cat extends Mammal {
 
     public void sayHello(){

@@ -1,7 +1,6 @@
-/**
- * Created by georgec on 27.07.16.
- */
+
 public class Humster extends Mammal{
+
 
     public void sayHello(){
         System.out.println("I don't speak because I'm useless and stupid peace of shit");

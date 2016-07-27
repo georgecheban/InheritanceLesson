@@ -1,10 +1,19 @@
-import com.sun.org.apache.xpath.internal.SourceTree;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-/**
- * Created by georgec on 27.07.16.
- */
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Cat cat1 = new Cat();
+        System.out.println("Enter cat's name: ");
+        cat1.setName(reader.readLine());
+        System.out.println("Enter cat's food: ");
+        cat1.setFood(reader.readLine());
+        System.out.println("Enter cat's place of living: ");
+        cat1.setPlaceOfLiving(reader.readLine());
+        cat1.introduction();
 
         Dog dog = new Dog();
         dog.sayHello();
@@ -12,6 +21,7 @@ public class Main {
         dog.love("everybody");
         dog.sleep();
         System.out.println("_____________");
+
 
         Humster faggot = new Humster();
         faggot.sayHello();
@@ -26,6 +36,11 @@ public class Main {
         cat.hate("everybody");
         cat.play();
         cat.sleep();
+        System.out.println("_____________");
 
+        cat.setName("Adolf");
+        cat.setFood("Jews");
+        cat.setPlaceOfLiving("in Berlin.");
+        cat.introduction();
     }
 }
